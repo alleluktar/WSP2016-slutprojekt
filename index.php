@@ -1,12 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Simon
- * Date: 2016-04-05
- * Time: 12:55
- */
-
-<?php
 session_start();
 require('header.php');
 //Code to decide files to include from get variable.
