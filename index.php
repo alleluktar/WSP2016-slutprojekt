@@ -6,12 +6,12 @@ require('header.php');
 if(isset($_GET['page'])&&($_GET['page']!="")) {
     $page = $_GET['page'];
 
-    if (file_exists("views/{$page}.php")) {
-        //require("views/{$page}.php");}
-        //else
-        require('views/main.php');
+    if (file_exists("{$page}.php")) {
+        require("{$page}.php");}
+        else
+        require('main.php');
 
     } // else require('views/main.php');
+else{  require('main.php');}
 
     require('footer.php');
-}
